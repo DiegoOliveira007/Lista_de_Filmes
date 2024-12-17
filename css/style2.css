@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/background1.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 50, 0.95); 
+    border-radius: 8px;
+    padding: 30px;
+    width: 400px;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 0.9rem;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+    transform: scale(1.1);
+}
+
+.checkbox-container label {
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+
+.confirm-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+    background-color: #218838;
+}

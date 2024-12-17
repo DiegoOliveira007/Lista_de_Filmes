@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CINERATE - Cadastro</title>
+    
+        <link rel="stylesheet" href="../css/style2.css">
+    </head>
+    <body>
+    
+    
+        <div class="form-container">
+            <h2 class="form-title">CINERATE</h2>
+    
+            <form action="../principal/principal.html" method="post">
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+    
+                <label for="username">Nome do usuário</label>
+                <input type="text" id="username" placeholder="Digite seu nome">
+    
+                <label for="birthdate">Data de nascimento</label>
+                <input type="date" id="birthdate">
+    
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+    
+                <div class="checkbox-container">
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Tenho pelo menos 16 anos e aceito os Termos de Uso.</label>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="privacidade">
+                    <label for="privacidade">Aceito a Política de Privacidade e concordo com o processamento das minhas informações pessoais.</label>
+                </div>
+    
+                <button type="submit" class="confirm-button">Confirmar</button>
+            </form>
+        </div>
+    </body>
+</html>
