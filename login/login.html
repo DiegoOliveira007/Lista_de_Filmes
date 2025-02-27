@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login - Cinerate</title>
-        <link rel="stylesheet" href="../css/style3.css">
-    </head>
-    <body>
-        <div class="login-container">
-    
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
             <div class="logo">
+
+                <p class="nomelogo">CINERATE</p>
             </div>
-            <h2>Entre no Cinerate</h2>
-            <form action="../principal/principal.html" method="get">
-                <label for="username">Nome de usuário</label>
-                <input type="text" id="username" name="username" placeholder="usúario" required>
-                
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" placeholder="**" required>
-                
-                <div style="text-align: left;">
-                    <input type="checkbox" id="remember">
-                    <label for="remember" style="display: inline;">Lembre de mim</label>
-                </div>
-    
-                <button type="submit">Entrar</button>
-            </form>
+        </nav>
+    </header>
+
+<div class="LayoutL">
+    <form action="login.php" method="post" class="formlogin">
+    <div class="LoginDados">
+        <h1 class="titulologin">ENTRE NO <span>CINERATE</span></h1>
+        <label for="nomeuser">Nome do Usuário</label>
+        <input type="text" name="nomeUsuario" id="nomeUsuario1" placeholder="Digite seu nome">
+        
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+    </div>
+
+    <div class="Checksboxs2">
+
+        <div class="ChecksButton2">
+            <input type="checkbox" name="termos" id="termos">
+            <label for="c1" class="labelCheck">Lembre de mim</label>
         </div>
-    </body>
+
+        <input type="submit" value="Entrar" id="ButtonLogar" class="ButtonL">
+    </div>
+        </form>
+</div>
+</body>
 </html>

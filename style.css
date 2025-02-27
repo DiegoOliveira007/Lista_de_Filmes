@@ -1,0 +1,1192 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(./img/background.png);
+    background-size: cover;
+}
+
+.logo{
+    display: flex;
+}
+
+.nomelogo{
+    color: #a6a6a6;
+    font-weight: bold;
+    font-family: "Raleway", serif;
+    font-size: 19px;
+    margin-top: 2px;
+    letter-spacing: 1px;
+}
+
+.titulo{
+    color: white;
+    font-family: "Raleway", serif;
+    font-size: 42px;
+    text-shadow: 2px 2px 7px white;
+    text-align: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #011939;
+    height: 39px;
+    padding: 0px 12px 0px 12px;
+    align-items: center;
+}
+
+.navnomeuser{
+    margin-left: 10%;
+    text-decoration: none;
+    color: #a6a6a6;
+    font-weight: bold;
+    font-family: "Raleway", serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.4s ease;
+}
+
+.navnomeuser:hover{
+    color: white;
+}
+
+nav img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.perfil{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 33%;
+}
+
+.menu{
+    display: flex;
+    margin-left: auto;
+    padding: 5px;
+    width: 35px;
+    font-size: 27px;
+    color: #a6a6a6;
+    border: none;
+    cursor: pointer;
+    background: none;
+    transition: color 0.4s ease;
+}
+
+#LayoutMenu{
+    position: fixed;
+    z-index: 11;
+    width: 219px;
+    right: -219px;
+    height: 100%;
+    padding-top: 15px;
+    top: 0;
+    background-color: #011939d5;
+    transition: right 0.8s ease-in-out;
+}
+
+#LayoutMenu ul{
+    list-style: none;
+    padding: 0px;
+    margin-top: 15px;
+}
+
+
+#LayoutMenu li{
+    padding: 15px;
+}
+
+#fechamenu{
+    margin-left: 80%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    top: 0;
+    color: #a6a6a6;
+    font-size: 23px;
+    transition: color 0.4s ease;
+}
+
+#fechamenu:hover{
+    color: white;
+}
+
+#sairperfil{
+    margin-top: 100%;
+    padding: 19px;
+    width: 101.5%;
+    border: none;
+    background-color: #ff1823;
+    display: flex;
+    font-size: 23px;
+    text-align: left;
+    cursor: pointer;
+    gap: 50px;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+#sairperfil:hover{
+    background-color: #aa1119;
+    color: #a6a6a6;
+}
+
+#LayoutMenu a{
+    color: white;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 23px;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+}
+
+#LayoutMenu li:hover{
+    background-color: #003172;
+}
+
+
+#fecharmenu{
+    padding: 5px;
+
+    color: #a6a6a6;
+
+}
+
+.menu:hover{
+    color: white;
+}
+
+.barrapesquisa{
+   margin-left: 32%;
+}
+
+.barrapesquisa input{
+    background-color: white;
+    border-radius: 35px;
+    padding: 9px 12px 9px 12px;
+    width: 150%;
+}
+
+.parteinicial{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.logcadast{
+    background-color: #011939;
+    padding: 70px;
+    border-radius: 12px;
+    margin-top: 7%;
+    text-align: center;
+}
+
+span{
+    display: block;
+    margin-top: 10px;
+
+}
+.logincadastro{
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: #011939;
+    font-family: "Raleway", serif;
+    background-color: #a6a6a6;
+    padding: 12px 70px 10px 70px;
+    border-radius: 10px;
+    line-height: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.logincadastro:hover{
+    background-color: #727272;
+}
+
+.senhaesquece{
+    color: white;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 17px;
+}
+
+.LayoutC{
+    display: flex;
+    justify-content: center;
+}
+
+.MenuAlternar{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #2c5c17;
+    gap: 15px;
+    width: 42%;
+    border-radius: 5px;
+}
+
+.MenuAlternar a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #6ae038;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+}
+
+.MenuAlternarF{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 3%;
+    background-color: #2c5c17;
+    gap: 15px;
+    width: 38%;
+    border-radius: 5px;
+}
+
+.MenuAlternarF a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #6ae038;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+}
+
+.perfilF h2{
+    font-size: 20px;
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.perfilF label{
+    font-size: 20px;
+    background-color: #ff1823;
+    padding: 13px;
+    border-radius: 10px;
+    margin-left: 1%;
+    width: 55%;
+    text-align: center;
+    font-family: "Raleway", serif;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#buttonSalvarF{
+    font-size: 20px;
+    background-color: #50a82a;
+    padding: 13px;
+    border-radius: 10px;
+    border: none;
+    width: 30%;
+    text-align: center;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+#buttonSalvarF:hover{
+    background-color: #3e8801;
+}
+
+.perfilF label:hover{
+    background-color: #a70f16;
+}
+
+.perfilF input{
+    display: none;
+}
+
+.LayoutF{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.perfilF{
+    background-color: #011939;
+    padding: 35px;
+    width: 30%;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.perfilF img{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.LayoutL{
+    display: flex;
+    justify-content: center;
+}
+
+.LayoutAlt{
+    display: flex;
+    justify-content: center;
+}
+
+.mainHome{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 26px;
+    margin-top: 5%;
+}
+
+.MainInfo{
+    padding: 20px;
+    background-color: #011939;
+    margin: 5% auto;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.FilmeCard{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.filminfo{
+   display: flex;
+   font-family: "Raleway", serif;
+   color: #727272;
+   gap: 20px;
+   font-weight: bold;
+   font-size: 12px;
+   margin-left: 15%;
+   margin-bottom: 13px;
+}
+
+#nota{
+    display: flex;
+    font-family: "Raleway", serif;
+    color: #6ae038;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 35%;
+}
+
+.BotoesAvaliacao{
+    background-color: #a6a6a6;
+    padding: 25px;
+    max-width: 35%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    border-radius: 17px;
+    flex-direction: column;
+}
+
+.avaliacao{
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+.avaliacao p{
+    font-family: "Raleway", serif;
+    color: #011939;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.estrelas{
+    display: flex;
+    margin-top: 23px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.estrela{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #011939;
+    font-size: 45px;
+    transition: color 0.3s;
+}
+
+.estrela:hover i, .estrela.hover i, .estrela.selecionado i {
+    color: green
+}
+
+.comentarios{
+    margin: auto;
+    width: 90%;
+}
+
+.comentariosform{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #a6a6a6;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 15px;
+}
+
+.botaocomentario{
+    background-color: #011939;
+    width: 16%;
+    padding: 13px;
+    border: none;
+    margin-top: 7%;
+    color: #a6a6a6;
+    font-size: 17px;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.botaocomentario:hover{
+    color: white;
+}
+
+.hrComentarios{
+    background-color: #a6a6a6;
+    margin: auto;
+    width: 30%;
+    padding: 0.2px;
+}
+
+.comentariosform img{
+    width: 50px;
+    margin-left: 38%;
+    margin-top: 4%;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.inputcomentarios{
+    margin-left: 4%;
+    padding: 10px;
+    background-color: #a6a6a6;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    overflow-y: hidden;
+}
+
+.inputcomentarios::placeholder{
+    color: #011939;
+    font-size: 17px;
+}
+
+
+.comentarios h2{
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.perfilcomentario{
+    display: flex;
+    align-items: center;
+}
+
+
+.UsuariosComentarios{
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    width: 80%;
+    border-radius: 3px;
+    margin: 30px auto 10px;
+    background-color: #638dc4;
+}
+
+.UsuariosComentarios img{
+    width: 35px;
+    height: 35px;
+    margin-top: 16px;
+    border-radius: 50%;
+    margin-right: 2%;
+    margin-left: 1%;
+}
+
+.UsuariosComentarios h3{
+    color: white;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.UsuariosComentarios p{
+    color: white;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.icones{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.botaoav button{
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-top: 5px;
+    align-items: center;
+    cursor: pointer;
+    color: #011939;
+    gap: 8px;
+    border: none;
+    background: none;
+}
+
+.botaoav i{
+    transition: color 0.4s ease;
+}
+
+.botaoav i:hover{
+    color: #2a5816e8;
+}
+
+.botaoav p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #011939;
+    font-family: "Raleway", serif;
+}
+
+.detalhesfilm{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#titulofilme{
+    font-family: "Raleway", serif;
+    color: white;
+    font-size: 27px;
+    white-space: nowrap;
+}
+
+#sinopsefilme{
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    color: #a6a6a6;
+    text-align: justify;
+    font-size: 15px;
+    margin-right: 10%;
+}
+
+#imagemfilme{
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 0px 30px 0px 30px;
+}
+
+.mainperfil{
+    width: 79%;
+    border-radius: 10px;
+    margin: 5% auto;
+    background-color: #a6a6a6;
+    padding: 20px;
+}
+
+.perfiluser{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-left: 15%;
+}
+
+.detalhesperfil{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.perfiluser img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.nomeuserp{
+    margin: 20px 20px 19px 6px;
+    font-family: "Raleway", serif;
+    font-weight: bold;
+    color: #011939;
+    font-size: 25px;
+}
+
+.biolocal{
+    background-color: #727272;
+    padding: 15px 20px 15px 1px;
+    border-radius: 10px;
+    margin-left: 5%;
+    width: 230%;
+}
+
+.biografia{
+    font-family: "Raleway", serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 9%;
+    font-weight: bold;
+}
+
+.localizao{
+    font-family: "Raleway", serif;
+    color: #011939;
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: 9%;
+    font-weight: bold;
+}
+
+.atividaderecent{
+    margin-top: 3%;
+    background-color: #011939;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.filmeatv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-left: 5%;
+    gap: 45px;
+}
+
+.atividaderecent h2{
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.botaoedit{
+    margin-left: 37%;
+    margin-bottom: 8%;
+    background-color: #011939;
+    padding: 15px 20px 15px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: none;
+    width: 17%;
+    cursor: pointer;
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    font-weight: bold;
+}
+
+.listas{
+    display: flex;
+    justify-content: center;
+}
+
+.generos{
+    display: flex;
+    justify-content: center;
+}
+
+.listascontainer{
+    background-color: #011939;
+    padding: 50px;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+.generoscontainer{
+    background-color: #011939;
+    padding: 50px;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+.categoriaslistas{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 10px;
+}
+
+.categoriasgenero{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 10px;
+}
+
+.categoriasgenero a{
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.categoriaslistas a{
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.catalogos{
+    background-color: #011939;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 15%;
+    width: 70%;
+}
+
+.filmes{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto; scroll-behavior: smooth;
+}
+
+.filmes::-webkit-scrollbar{
+    display: none;
+}
+
+.rolamento{
+    display: flex;
+    align-items: center;
+    position: static;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.filmes img{
+    padding: 5px;
+    border-radius: 10px;
+    width: 180px;
+    height: 260px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.filmes img:hover{
+    transform: scale(0.79);
+    
+}
+
+.setad, .setae{
+    padding: 10px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    z-index: 2;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.setad:active{
+    transform: translateX(-4px)
+}
+
+.setae:active{
+    transform: translateX(4px)
+}
+
+.setad i, .setae i{
+    color: white;
+    transition: color 0.4s ease;
+}
+
+.setad i:hover, .setae i:hover{
+    color: #a6a6a6;
+}
+
+.setad{
+    left: 195px;
+}
+
+.setae{
+    right: 170px;
+}
+
+.filmeslistas{
+    display: grid;
+    margin: 10px 45px;
+    gap: 30px;
+    width: 90%;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.generoslistas{
+    display: grid;
+    margin: 10px 45px;
+    gap: 30px;
+    width: 90%;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+article{
+    padding: 50px;
+    width: 91px;
+    height: 139px;
+    background-color: #a6a6a6;
+}
+
+hr{
+    background-color: #a6a6a6;
+    padding: 1px;
+    border: #a6a6a6 solid 1px;
+    
+}
+
+.catalogos h1{
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.CadastroDados{
+    display: flex;
+    flex-direction: column;
+}
+
+.InfoPerfil{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.LoginDados{
+    display: flex;
+    flex-direction: column;
+}
+
+.Checkboxs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 17%;
+}
+
+.ButtonAltC{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 40%;
+}
+
+.Checksboxs2{
+    display: flex;
+}
+
+.perfilalteracao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.ChecksButton{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 30%;
+    max-width: 500px;
+}
+
+.ChecksButton2{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2%;
+    max-width: 500px;
+}
+
+.ChecksButton2 input{
+    accent-color: #3e8801;
+    background-color: #a6a6a6;
+    width: 15px;
+    height: 15px;
+    min-width: 20px;
+    min-height: 20px;
+    margin-top: 19px;
+    margin-right: 10px;
+}
+
+.ChecksButton input{
+    accent-color: #3e8801;
+    background-color: #a6a6a6;
+    width: 5px;
+    height: 5px;
+    min-width: 20px;
+    min-height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.ButtonC{
+    margin-top: 5%;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 46%;
+    width: 24%;
+    font-family: "Raleway", serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #50a82a;
+    box-shadow: 0px 2px #1e3f10;
+}
+
+.ButtonAlt{
+    margin-top: 5%;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 80%;
+    width: 100%;
+    font-family: "Raleway", serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #50a82a;
+    box-shadow: 0px 2px #1e3f10;
+}
+
+.ButtonAlt:hover{
+    background-color: #346d1b;
+}
+
+.ButtonAlt:active{
+    background-color: #346d1b;
+    box-shadow: 0px 1px #1e3f10;
+    transform: translateY(3px);
+}
+
+.ButtonC:hover{
+    background-color: #346d1b;
+}
+
+.ButtonC:active{
+    background-color: #346d1b;
+    box-shadow: 0px 1px #1e3f10;
+    transform: translateY(3px);
+}
+
+.ButtonL{
+    margin-top: 5%;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 30%;
+    width: 100%;
+    font-family: "Raleway", serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #50a82a;
+    box-shadow: 0px 2px #1e3f10; 
+    align-items: center;
+    display: grid;
+    justify-content: center;
+}
+
+.ButtonL:hover{
+    background-color: #346d1b;
+}
+
+.ButtonL:active{
+    background-color: #346d1b;
+    box-shadow: 0px 1px #1e3f10;
+    transform: translateY(3px);
+}
+
+input{
+    margin-bottom: 3px;
+    padding: 10px 10px 9px 12px;
+    outline: none;
+    width: 110%;
+    background-color: #a6a6a6;
+    border: none;
+}
+
+.LoginDados input{
+    margin-bottom: 16px;
+    padding: 10px 15px 9px 12px;
+    outline: none;
+    width: 92%;
+    margin-right: 93px;
+    background-color: #a6a6a6;
+    border: none;
+}
+
+label{
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.titulocadastro{
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    font-size: 30px;
+    margin-bottom: 18px;
+    margin-left: 175%;
+}
+
+.titulologin{
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    font-size: 30px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+::placeholder{
+    font-family: "Raleway", serif;
+    font-weight: bold;
+}
+
+.labelCheck{
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    font-weight: bold;
+    font-size: 14px;
+    align-self: center;
+    text-align: justify;
+}
+
+.formcadastro{
+    background-color: #011939;
+    padding: 45px;
+    border-radius: 12px;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fotoform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.perfilalt{
+    background-color: #011939;
+    padding: 45px;
+    width: 46%;
+    margin-top: 4%; 
+    margin-bottom: 4%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.InfoPerfil h2{
+    font-size: 20px;
+    font-family: "Raleway", serif;
+    color: #a6a6a6;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.biografiaAlt{
+    color: black;
+    padding: 9px;
+    background-color: #a6a6a6;
+    margin-left: 1%;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    overflow-y: hidden;
+}
+
+.formlogin{
+    background-color: #011939;
+    padding: 60px;
+    border-radius: 12px;
+    margin-top: 7%;
+}
+
+
+.ErrorSucessoMensagem{
+    font-size: 12px;
+    font-family: "Raleway", serif;
+    color: #ff3a3a;
+    margin-left: 3px;
+    font-weight: bold;
+    display: none;
+}
+
+.ErrorCaracteres{
+    font-size: 12px;
+    font-family: "Raleway", serif;
+    color: #ff3a3a;
+    margin-left: 3px;
+    font-weight: bold;
+    display: none;
+}
+
+.formverific{
+    margin-bottom: 14px;
+}
+

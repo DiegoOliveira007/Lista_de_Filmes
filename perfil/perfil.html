@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Perfil</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <p class="nomelogo">CINERATE</p>
+            </div>
+
+            <div class="barrapesquisa">
+              <input type="text" name="" id="">
+            </div>
+
+        <div class="perfil">
+            <img src="../imgprofiles/perfil_padrao.png" alt="" class="avatar">
+          <a href="../perfil/perfil.html" class="navnomeuser">NOMEUSER</a>
+        </div>
+        
+        <button type="button" class="menu" id="menu"> 
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+    </header>
+
+    <div id="LayoutMenu">
+        <button type="button" class="buttonfechar" id="fechamenu">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <ul>
+            <li><a href="../home/central.html"><i class="fa-solid fa-house"></i>Página Inicial</a></li>
+            <li><a href="../Listas/listaav.html"><i class="fa-sharp fa-solid fa-video"></i>Avaliados</a></li>
+            <li><a href="../Listas/listaes.html"><i class="fa-solid fa-clock"></i>Em espera</a></li>
+            <li><a href="../generos/inicialgeneros.html"><i class="fa-solid fa-clapperboard"></i>Gênero</a></li>
+            <li><a href="../perfil/perfil.html"><i class="fa-solid fa-circle-user"></i>Perfil</a></li>
+
+            
+        </ul>
+        <button type="button" id="sairperfil"><i class="fa-solid fa-right-from-bracket"></i>Sair</button>
+    </div>
+
+
+    <main class="mainperfil">
+
+        <section class="perfiluser">
+            <img src="../imgprofiles/perfil_padrao.png" alt="" class="avatar">
+        <div class="detalhesperfil">
+            <h1 class="nomeuserp">NOMEUSER</h1>
+        <div class="biolocal">
+            <p class="biografia">Biografia</p>
+            <p class="localizao">Local</p>
+        </div>
+    </div>
+    <button type="button" class="botaoedit" onclick="window.location.href='infoperfil.html';">
+        Editar Perfil
+    </button>
+        </section>
+
+        <section class="atividaderecent">
+            <h2>Atividades Recentes</h2>
+            <hr>
+            <div class="filmeatv">
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+                <article>
+
+                </article>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
